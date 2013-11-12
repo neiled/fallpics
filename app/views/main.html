@@ -1,9 +1,9 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<div class="jumbotron">
+  <form  class="form-horizontal" accept-charset="utf-8">
+    <div class="group-controls">
+      <label for="Tumblr_Page">Tumblr Page</label><input type="text" name="Tumblr_Page" ng-model="url" id="Tumblr_Page">
+    </div>
+    <p><input class="btn" type="submit" ng-click="scan()" value="Continue →"></p>
+  </form>
+   
 </div>

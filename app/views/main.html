@@ -1,9 +1,15 @@
 <div class="jumbotron">
   <form  class="form-horizontal" accept-charset="utf-8">
     <div class="group-controls">
-      <label for="Tumblr_Page">Tumblr Page</label><input type="text" name="Tumblr_Page" ng-model="url" id="Tumblr_Page">
+      <label for="Tumblr_Page">Tumblr Page</label><input type="text" name="Tumblr_Page" ng-model="blog" id="Tumblr_Page">
     </div>
     <p><input class="btn" type="submit" ng-click="scan()" value="Continue →"></p>
   </form>
    
 </div>
+
+<ul>
+<li ng-repeat="photo in photolist">
+<img src="{{photo}}">
+</li>
+</ul>

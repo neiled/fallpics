@@ -2,17 +2,15 @@
 
 angular.module('fallpicsApp')
   .controller('MainCtrl', function ($scope, $http) {
-    $scope.url = '';
-    $scope.result = '';
+    $scope.blog = 'fuckyeahlegos';
     //$http.get('/api/awesomeThings').success(function(awesomeThings) {
       //$scope.awesomeThings = awesomeThings;
     //});
 
     $scope.scan = function() {
-      //alert($scope.url);
-      $http.get('api/scan', {url: $scope.url}).success(function(data, status) {
-        $scope.result = data;
-        console.log($scope.result);
+      $http.get('api/scan', {params: {blog: $scope.blog}}).success(function(data, status) {
+        $scope.photolist = data;
+        console.log($scope.photolist);
       });
     }
   });

@@ -10,7 +10,6 @@ angular.module('fallpicsApp')
     $scope.scan = function() {
       $http.get('api/scan', {params: {blog: $scope.blog}}).success(function(data, status) {
         $scope.photolist = data;
-        console.log($scope.photolist);
       });
     }
   });

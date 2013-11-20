@@ -10,6 +10,6 @@
 
 <ul>
 <li ng-repeat="photo in photolist">
-<img src="{{photo}}">
+<img alt="{{photo.note_count}}" src="{{photo.photos[0].original_size.url}}">
 </li>
 </ul>
